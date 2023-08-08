@@ -1,0 +1,55 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-size: 1.1rem;
+    margin-left: 0.7em;
+}
+
+* {
+    margin-bottom: 0.7em;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.3em;
+}
+
+#name_StudID {
+    font-weight: lighter;
+    font-size: 1rem;
+}
+
+input,
+label {
+    border-radius: 0.5rem;
+    font-size: 1.3em;
+}
+
+button {
+    padding: 1.5em;
+    padding-left: 6.85em;
+    padding-right: 6.85em;
+    border-radius: 3rem;
+    border: 5px solid blue;
+    background-color: white;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: greenyellow;
+    color: blue;
+    cursor: pointer;
+}
+
+p {
+    font-size: 1.3em;
+    margin-bottom: 1.5em;
+}
+
+ul {
+    margin-bottom: 1.5em;
+}
+
