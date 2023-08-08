@@ -19,6 +19,7 @@ var userWord;
 var newUrl;
 var li;
 
+// API key
 const options = {
 	method: 'GET',
 	headers: {
@@ -29,6 +30,7 @@ const options = {
 
 submitBtn.addEventListener("click", wordGet);
 
+// calls for info about user inputted word
 function wordGet() {
 
     userWord = document.querySelector("#inputWord").value;
@@ -46,6 +48,7 @@ function wordGet() {
 
 }
 
+// calls for word synonyms
 function synonymWordGet(userWord) {
 
     newUrl = synonymsUrl + userWord + "/synonyms";
@@ -57,6 +60,7 @@ function synonymWordGet(userWord) {
     
 }
 
+// displays info about user inputted word
 function displayResults(json) {
     console.log(json);
     definitionsPar.textContent = "";
@@ -73,6 +77,7 @@ function displayResults(json) {
     synonymWordGet(json.word);
 }
 
+// displays word's synonyms
 function displaySynonymResults(json) {
     synonymPar.textContent = "";
     hSynonyms.style.display = "initial";
